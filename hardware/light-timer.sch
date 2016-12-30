@@ -58,32 +58,32 @@ $EndComp
 $Comp
 L CONN_01X04 P3
 U 1 1 586445BA
-P 5650 2750
-F 0 "P3" H 5650 3000 50  0000 C CNN
-F 1 "Relay Connector" V 5750 2750 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x04" H 5650 2750 50  0001 C CNN
-F 3 "" H 5650 2750 50  0000 C CNN
-	1    5650 2750
+P 5500 2400
+F 0 "P3" H 5500 2650 50  0000 C CNN
+F 1 "Relay Connector" V 5600 2400 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x04" H 5500 2400 50  0001 C CNN
+F 3 "" H 5500 2400 50  0000 C CNN
+	1    5500 2400
 	1    0    0    1   
 $EndComp
-Text Label 5450 2900 2    60   ~ 0
+Text Label 5300 2550 2    60   ~ 0
 GND
-Text Label 5450 2800 2    60   ~ 0
+Text Label 5300 2450 2    60   ~ 0
 IN1
-Text Label 5450 2700 2    60   ~ 0
+Text Label 5300 2350 2    60   ~ 0
 IN2
-Text Label 5450 2600 2    60   ~ 0
+Text Label 5300 2250 2    60   ~ 0
 VCC
 $Comp
 L CONN_01X02 P2
 U 1 1 5864463F
-P 4700 3650
-F 0 "P2" H 4700 3800 50  0000 C CNN
-F 1 "Pushbutton Connector" V 4800 3650 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_1x02" H 4700 3650 50  0001 C CNN
-F 3 "" H 4700 3650 50  0000 C CNN
-	1    4700 3650
-	1    0    0    -1  
+P 4550 4850
+F 0 "P2" H 4550 5000 50  0000 C CNN
+F 1 "Pushbutton Connector" V 4650 4850 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x02" H 4550 4850 50  0001 C CNN
+F 3 "" H 4550 4850 50  0000 C CNN
+	1    4550 4850
+	0    1    1    0   
 $EndComp
 $Comp
 L CONN_01X02 P1
@@ -165,32 +165,15 @@ Wire Wire Line
 	2100 2900 2100 3200
 Connection ~ 2100 2900
 Wire Wire Line
-	3900 2800 5450 2800
-Wire Wire Line
-	2450 2000 5150 2000
+	2450 2000 4950 2000
 Wire Wire Line
 	2450 2000 2450 2800
 Connection ~ 2450 2800
 Wire Wire Line
-	5450 2600 5150 2600
+	2450 5150 5200 5150
 Wire Wire Line
-	5150 2600 5150 2000
-Wire Wire Line
-	5450 2900 5150 2900
-Wire Wire Line
-	5150 4500 5150 2900
-Wire Wire Line
-	2450 4500 5150 4500
-Wire Wire Line
-	2450 4500 2450 3200
+	2450 5150 2450 3200
 Connection ~ 2450 3200
-Wire Wire Line
-	4500 3600 3900 3600
-Wire Wire Line
-	4500 3700 4400 3700
-Wire Wire Line
-	4400 3700 4400 4500
-Connection ~ 4400 4500
 NoConn ~ 2900 2700
 NoConn ~ 2900 2900
 NoConn ~ 2900 3000
@@ -201,17 +184,126 @@ NoConn ~ 2900 3700
 NoConn ~ 2900 3800
 NoConn ~ 2900 3900
 NoConn ~ 2900 4000
-NoConn ~ 3900 4000
-NoConn ~ 3900 3900
-NoConn ~ 3900 3800
-NoConn ~ 3900 3700
-NoConn ~ 3900 3500
-NoConn ~ 3900 3400
-NoConn ~ 3900 3300
-NoConn ~ 3900 3200
-NoConn ~ 3900 3100
-NoConn ~ 3900 3000
-NoConn ~ 3900 2900
 NoConn ~ 3900 2700
-NoConn ~ 5450 2700
+$Comp
+L DIP_SW_9 SW2
+U 1 1 5865ACE5
+P 4750 3400
+F 0 "SW2" H 4750 4000 60  0000 C CNN
+F 1 "Duration Switches" H 4750 2800 60  0000 C CNN
+F 2 "Housings_DIP:DIP-18_W7.62mm" H 4750 3400 60  0001 C CNN
+F 3 "" H 4750 3400 60  0000 C CNN
+	1    4750 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3000 4400 3000
+Wire Wire Line
+	3900 3100 4400 3100
+Wire Wire Line
+	3900 3200 4400 3200
+Wire Wire Line
+	3900 3300 4400 3300
+Wire Wire Line
+	3900 3400 4400 3400
+Wire Wire Line
+	3900 3500 4400 3500
+Wire Wire Line
+	3900 3600 4400 3600
+Wire Wire Line
+	3900 3700 4400 3700
+Wire Wire Line
+	3900 3800 4400 3800
+Wire Wire Line
+	5100 3000 5200 3000
+Wire Wire Line
+	5200 5150 5200 2550
+Wire Wire Line
+	5100 3100 5200 3100
+Connection ~ 5200 3100
+Wire Wire Line
+	5100 3200 5200 3200
+Connection ~ 5200 3200
+Wire Wire Line
+	5100 3300 5200 3300
+Connection ~ 5200 3300
+Wire Wire Line
+	5100 3400 5200 3400
+Connection ~ 5200 3400
+Wire Wire Line
+	5100 3500 5200 3500
+Connection ~ 5200 3500
+Wire Wire Line
+	5100 3600 5200 3600
+Connection ~ 5200 3600
+Wire Wire Line
+	5100 3700 5200 3700
+Connection ~ 5200 3700
+Wire Wire Line
+	5100 3800 5200 3800
+Connection ~ 5200 3800
+Wire Wire Line
+	5300 2250 4950 2250
+Wire Wire Line
+	4950 2250 4950 2000
+Wire Wire Line
+	5300 2450 4500 2450
+Wire Wire Line
+	4500 2450 4500 2900
+Wire Wire Line
+	4500 2900 3900 2900
+Wire Wire Line
+	3900 2800 4400 2800
+Wire Wire Line
+	4400 2800 4400 2350
+Wire Wire Line
+	4400 2350 5300 2350
+Wire Wire Line
+	5200 2550 5300 2550
+Connection ~ 5200 3000
+$Comp
+L SW_PUSH SW1
+U 1 1 5865B215
+P 4500 4300
+F 0 "SW1" H 4650 4410 50  0000 C CNN
+F 1 "On-board Pushbutton" H 4500 4200 50  0000 C CNN
+F 2 "Buttons_Switches_ThroughHole:SW_PUSH-12mm" H 4500 4300 50  0001 C CNN
+F 3 "" H 4500 4300 50  0000 C CNN
+	1    4500 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 4000 4000 4000
+Wire Wire Line
+	4000 4000 4000 4650
+Connection ~ 4000 4300
+Wire Wire Line
+	4800 4300 5200 4300
+Connection ~ 5200 4300
+Wire Wire Line
+	4600 4650 5200 4650
+Connection ~ 5200 4650
+NoConn ~ 3900 3900
+Text Label 4400 3000 2    60   ~ 0
+16HR
+Text Label 4400 3100 2    60   ~ 0
+8HR
+Text Label 4400 3200 2    60   ~ 0
+4HR
+Text Label 4400 3300 2    60   ~ 0
+2HR
+Text Label 4400 3400 2    60   ~ 0
+1HR
+Text Label 4400 3500 2    60   ~ 0
+1_2HR
+Text Label 4400 3600 2    60   ~ 0
+1_4HR
+Text Label 4400 3700 2    60   ~ 0
+1_8HR
+Text Label 4400 3800 2    60   ~ 0
+1_16HR
+Wire Wire Line
+	4000 4300 4200 4300
+Wire Wire Line
+	4000 4650 4500 4650
 $EndSCHEMATC
